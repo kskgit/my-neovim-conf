@@ -9,6 +9,10 @@ keymap.set('n', 'dw', '"_dw')
 -- telescope setting
 local fb_actions = require "telescope._extensions.file_browser.actions"
 
+--Remap space as leader key
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 require("telescope").setup {
   extensions = {
     file_browser = {

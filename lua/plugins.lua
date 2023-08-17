@@ -33,4 +33,5 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip' --スニペットエンジン
   use 'hrsh7th/cmp-vsnip' --スニペットを補完ソースに
   use 'onsails/lspkind.nvim' --補完欄にアイコンを表示
+  use "hrsh7th/cmp-cmdline"
 end)
