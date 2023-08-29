@@ -34,4 +34,10 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-vsnip' --スニペットを補完ソースに
   use 'onsails/lspkind.nvim' --補完欄にアイコンを表示
   use "hrsh7th/cmp-cmdline"
+
+	-- highlighting 
+	use {
+ 		'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 end)
