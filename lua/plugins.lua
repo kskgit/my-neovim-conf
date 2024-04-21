@@ -51,4 +51,10 @@ return require('packer').startup(function(use)
   	command = "GoFmt",
   })
 
+	-- dap
+	use 'mfussenegger/nvim-dap'
+	use 'leoluz/nvim-dap-go'
+	use 'rcarriga/nvim-dap-ui'        -- デバッガUIを提供
+	use 'theHamsta/nvim-dap-virtual-text' -- インラインアノテーション表示
+
 end)
