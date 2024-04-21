@@ -14,3 +14,7 @@ vim.g.maplocalleader = " "
 -- go to def
 keymap.set('n', 'gd', "<C-]>")
 keymap.set('n', '<leader>gd', "gd")
+
+-- diagnostics
+keymap.set('n', '<leader>e', vim.diagnostic.open_float)
+keymap.set('n', '<leader>q', vim.diagnostic.setloclist)

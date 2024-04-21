@@ -43,4 +43,12 @@ return require('packer').startup(function(use)
 
 	-- debbug 
 	use 'puremourning/vimspector'
+
+	-- vim-go
+	use { "fatih/vim-go", opt = true, ft = { "go" } }
+	vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  	pattern = "*.go",
+  	command = "GoFmt",
+  })
+
 end)
