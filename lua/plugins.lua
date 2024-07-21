@@ -56,5 +56,5 @@ return require('packer').startup(function(use)
 	use 'leoluz/nvim-dap-go'
 	use 'rcarriga/nvim-dap-ui'        -- デバッガUIを提供
 	use 'theHamsta/nvim-dap-virtual-text' -- インラインアノテーション表示
-
+	use { "nvim-neotest/nvim-nio" }
 end)
