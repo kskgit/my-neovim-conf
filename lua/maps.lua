@@ -18,3 +18,7 @@ keymap.set('n', '<leader>gd', "gd")
 -- diagnostics
 keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+
+vim.g.vimspector_enable_mappings = 'HUMAN'
+vim.g.python3_host_prog = '/Users/ksk/.pyenv/shims/python3'
+
