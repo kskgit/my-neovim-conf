@@ -9,6 +9,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 require("mason").setup({
 	ensure_installed = {
 		"mypy",
+		"black"
 	}
 })
 
