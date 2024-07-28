@@ -34,7 +34,11 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-vsnip' --スニペットを補完ソースに
   use 'onsails/lspkind.nvim' --補完欄にアイコンを表示
   use "hrsh7th/cmp-cmdline"
-	use "nvimtools/none-ls.nvim"
+	use {"nvimtools/none-ls.nvim",
+				requires = {
+      		"nvimtools/none-ls-extras.nvim",
+				}
+			}
 	-- highlighting 
 	use {
  		'nvim-treesitter/nvim-treesitter',
